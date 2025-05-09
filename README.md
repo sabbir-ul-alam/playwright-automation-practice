@@ -9,3 +9,6 @@
 # when running in a head mode
 by default pytest will run the tests in headless mode
 `pytest <file_name> --headed`
+
+# codegen with playwright
+`playwright codegen <url>`
