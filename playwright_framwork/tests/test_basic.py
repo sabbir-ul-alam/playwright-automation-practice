@@ -2,7 +2,7 @@ from playwright.sync_api import Page
 
 
 
-#here playwright is a global fixture given by playwright
+#here playwright_framwork is a global fixture given by playwright_framwork
 def test_create_browser(playwright):
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
