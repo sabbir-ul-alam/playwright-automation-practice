@@ -12,3 +12,8 @@ by default pytest will run the tests in headless mode
 
 # codegen with playwright
 `playwright codegen <url>`
+
+# to see screenshot and trace
+`pytest --trace on`
+
+`playwright show-trace .\trace.zip`

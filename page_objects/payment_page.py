@@ -26,7 +26,7 @@ class PaymentPage:
         self.page.locator('.user__name input').first.fill(email)
         self.page.get_by_placeholder("Select Country").type(country)
         # self.page.pause()
-        self.page.get_by_role('button', name='Button').click()
+        self.page.get_by_role('button', name='Bangladesh').click()
 
     def submit_order(self):
         self.page.locator('.action__submit').click()
