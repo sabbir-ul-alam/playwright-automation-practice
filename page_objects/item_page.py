@@ -1,4 +1,4 @@
-from page_objects.cart_page import  CartPage
+from page_objects.cart_page import CartPage
 from playwright.sync_api import Page
 class ItemPage:
     def __init__(self,page:Page):

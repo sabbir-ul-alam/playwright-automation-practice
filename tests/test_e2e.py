@@ -12,5 +12,6 @@ def test_login_and_submit_order(page: Page):
     payment_page = cart_page.checkout()
     payment_page.fill_personal_info("4542 9931 9292 0000", "3/30", 317, "sabbir")
     payment_page.fill_shipping_info("anshika@gmail.com","ba")
+    payment_page.submit_order()
 
 
