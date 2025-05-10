@@ -1,8 +1,6 @@
-import time
-
 from playwright.sync_api import Page
-from playwright_framwork.page_objects.item_page import ItemPage
-class Login:
+from page_objects.item_page import ItemPage
+class LoginPage:
     def __init__(self, page:Page):
         self.page = page
 
@@ -13,7 +11,7 @@ class Login:
         self.page.get_by_placeholder("email@example.com").fill(user_name)
         self.page.get_by_placeholder("enter your passsword").fill(password)
         self.page.locator('#login').click()
-        self.page.pause()
+        # self.page.pause()
         return ItemPage(self.page)
 
 
