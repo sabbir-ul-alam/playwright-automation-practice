@@ -17,3 +17,8 @@ by default pytest will run the tests in headless mode
 `pytest --trace on`
 
 `playwright show-trace .\trace.zip`
+
+# run with env from powershell
+`$env:ENV="stg"; pytest tests/test_e2e.py`
+
+if no env is set from cmd, then it will read from .env file
