@@ -4,10 +4,8 @@ from page_objects.login_page import LoginPage
 from utils.config_loader import load_config
 import os
 
-def test_login_and_submit_order(page: Page):
-    env = os.getenv("ENV", "stg")
-    config = load_config(env)
 
+def test_login_and_submit_order(page: Page, config):
     login_page= LoginPage(page)
     login_page.visit(config["base_url"])
     item_page = login_page.login(config["email"], config["password"])
