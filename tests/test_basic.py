@@ -8,7 +8,7 @@ def test_create_browser(playwright):
     context = browser.new_context()
     page = context.new_page() #context is like a new fresh browser instace
     page.goto("http://rahulshettyacademy.com")
-    context2 = browser.new_context()#one text can have multiple context, context doest share cookies
+    context2 = browser.new_context()#one TEST can have multiple context, context doest share cookies
     page2 = context2.new_page()
     page2.goto("https://www.facebook.com/")
 
