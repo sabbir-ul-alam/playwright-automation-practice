@@ -12,3 +12,5 @@ class ItemPage:
         self.page.locator(".btn.btn-custom", has_text='Cart').click()
         return CartPage(self.page)
 
+    def get_url(self):
+        return self.page.url

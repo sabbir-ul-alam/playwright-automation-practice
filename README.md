@@ -14,11 +14,18 @@ by default pytest will run the tests in headless mode
 `playwright codegen <url>`
 
 # to see screenshot and trace
-`pytest --trace on`
+`pytest --tracing on`
 
 `playwright show-trace .\trace.zip`
 
 # run with env from powershell
 `$env:ENV="stg"; pytest tests/test_e2e.py`
 
+# generate html report
+ `pytest --html=report.html --self-contained-html`
 if no env is set from cmd, then it will read from .env file
+
+# to generate requirement.txt
+`pip freeze > requirements.txt`
+or
+`pipreqs . --force`
